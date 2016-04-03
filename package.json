@@ -1,0 +1,23 @@
+{
+  "name": "git-status-porcelain",
+  "version": "0.0.0",
+  "description": "Now you can get filenames from 'git status --porcelain'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorBabkin/git-status-porcelain.git"
+  },
+  "author": "Igor Babkin <igba14@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorBabkin/git-status-porcelain/issues"
+  },
+  "homepage": "https://github.com/IgorBabkin/git-status-porcelain#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
