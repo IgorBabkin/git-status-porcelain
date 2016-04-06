@@ -47,7 +47,7 @@ describe('All together', () => {
     });
 
     it('exec_command: Fail', (done) => {
-        let error_msg = 'Something is wrong';
+        let error_msg = 'Something went wrong';
         let exec_shell_command = () => Promise.reject(new Error(error_msg));
         let set_5_sec_timeout = create_timeout_fn(100);
         exec(

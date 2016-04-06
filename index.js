@@ -1,1 +1,1 @@
-module.exports = require('./src/get_git_status_files').default;
+module.exports = require('./src/index').default;

@@ -45,5 +45,9 @@ gulp.task('test', function () {
 });
 
 gulp.task('watch-test', function() {
-    gulp.watch(['test/*.ts'], ['test']);
+    gulp.watch(['test/*.ts', 'src/*.ts'], ['test']);
+});
+
+gulp.task('watch-lint', function() {
+    gulp.watch(['test/*.ts', 'src/*.ts'], ['lint']);
 });
