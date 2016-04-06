@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - "4"
+
+before_install:
+    - npm install -g gulp-cli    
+
+install:
+    - npm install
+    - npm run tsd-reinstall
+  
+before_script:
+    - npm run lint
+    - npm test
