@@ -7,6 +7,7 @@ var mocha = require("gulp-mocha");
 var gutil = require('gulp-util');
 var tsNodeRegister = require("ts-node/register");
 var tsconfig = require('./tsconfig.json');
+var tsd = require('gulp-tsd');
 
 gulp.task('dist', function () {
     var tsProject = ts.createProject(Object.assign({
@@ -50,4 +51,11 @@ gulp.task('watch-test', function() {
 
 gulp.task('watch-lint', function() {
     gulp.watch(['test/*.ts', 'src/*.ts'], ['lint']);
+});
+
+gulp.task('tsd-reinstall', function (callback) {
+    tsd({
+        command: 'reinstall',
+        config: './tsd.json'
+    }, callback);
 });
