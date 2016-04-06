@@ -4,7 +4,8 @@
   "description": "Now you can get filenames from 'git status --porcelain'",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && gulp tsd-reinstall",
+    "start": "npm install && npm run tsd-reinstall",
+    "tsd-reinstall": "gulp tsd-reinstall",
     "test": "gulp test",
     "lint": "gulp lint",
     "precommit": "npm run lint",
