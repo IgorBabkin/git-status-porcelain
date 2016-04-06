@@ -11,4 +11,3 @@ install:
   
 before_script:
     - npm run lint
-    - npm test
