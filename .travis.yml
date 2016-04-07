@@ -11,3 +11,9 @@ install:
   
 before_script:
     - npm run lint
+    
+before_deploy:
+    - npm run build
+    
+deploy:
+    - npm publish
