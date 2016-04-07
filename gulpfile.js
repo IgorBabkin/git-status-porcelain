@@ -10,13 +10,10 @@ var tsconfig = require('./tsconfig.json');
 var tsd = require('gulp-tsd');
 
 gulp.task('dist', function () {
-    var tsProject = ts.createProject(Object.assign({
-        declaration: true,
-        noExternalResolve: true
-    }, tsconfig.compilerOptions));
-
-    var tsStream = gulp.src('src/*.ts')
-        .pipe(ts(tsProject));
+    var tsProject = ts.createProject('tsconfig.json');
+        
+    var tsStream = tsProject.src() 
+		.pipe(ts(tsProject));        
 
     return merge([
         tsStream.dts.pipe(gulp.dest('dist')),

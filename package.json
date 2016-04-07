@@ -9,7 +9,8 @@
     "test": "gulp test",
     "lint": "gulp lint",
     "precommit": "npm run lint",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "build": "gulp clean && gulp dist"
   },
   "repository": {
     "type": "git",
