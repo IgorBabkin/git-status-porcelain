@@ -1,6 +1,6 @@
 {
   "name": "git-status-porcelain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Now you can get filenames from 'git status --porcelain'",
   "main": "index.js",
   "scripts": {
